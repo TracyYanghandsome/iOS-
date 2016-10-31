@@ -545,6 +545,7 @@ player.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环
 ###原则
 1. 一个代码块内要确保copy，alloc 和 retain 的使用数量与 release 和 autorelease 的数量相等。
 2. 在使用以 alloc 或 new 开头或包含 copy 的方法，或 retain 一个对象时，你将会编程它的拥有者。
+<<<<<<< HEAD
 3. 实现 dealloc 方法，这是系统当 retain -> 0 的时候，自动调用的。手动调用会引起 retain count 计数错误（多一次的 release）。
 
 ###tableView性能优化
@@ -660,3 +661,6 @@ static NSString *ID = @"cell";
     [self.navigationController.view bringSubviewToFront:self.navigationController.navigationBar];
 }
 ```
+=======
+3. 实现 dealloc 方法，这是系统当 retain -> 0 的时候，自动调用的。手动调用会引起 retain count 计数错误（多一次的 release）。
+>>>>>>> 689dec036a05a4096839b028f43f618c3837604f
