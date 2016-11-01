@@ -661,6 +661,3 @@ static NSString *ID = @"cell";
     [self.navigationController.view bringSubviewToFront:self.navigationController.navigationBar];
 }
 ```
-=======
-3. 实现 dealloc 方法，这是系统当 retain -> 0 的时候，自动调用的。手动调用会引起 retain count 计数错误（多一次的 release）。
->>>>>>> 689dec036a05a4096839b028f43f618c3837604f
